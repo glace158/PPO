@@ -434,7 +434,7 @@ class TestRun(Run):
         ################## hyperparameters ##################
         self.init_parameters()
 
-        self.env = gym.make(self.env_name, "human")
+        self.env = gym.make(self.env_name, render_mode="human")
 
         # state space dimension
         self.observation_space = self.env.observation_space

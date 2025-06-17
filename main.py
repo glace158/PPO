@@ -7,8 +7,8 @@ if __name__ == '__main__':
     arg = sys.argv
 
     if len(arg)<= 1:        
-        #arg = ["main.py", "train", "PPO_preTrained/MountainCarContinuous-v0/PPO_MountainCarContinuous-v0_0_20250514-224951.pth"]
-        arg = ["main.py", "train", ""]
+        arg = ["main.py", "test", "PPO_preTrained/MountainCarContinuous-v0/PPO_MountainCarContinuous-v0_0_20250617-145148.pth"]
+        #arg = ["main.py", "train", ""]
         
 
     if len(arg) > 1:
