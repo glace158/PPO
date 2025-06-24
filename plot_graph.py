@@ -96,7 +96,7 @@ def save_log_graph(log_path, save_path="./PPO_figs/",env_name = 'Richdog', fig_n
     print("figure saved at : ", fig_file.get_file_path())
     print("============================================================================================")
 
-    #plt.show()
+    plt.show()
     return fig_file.get_file_path()
 
 # 행동 그래프 그리기
@@ -161,7 +161,8 @@ def save_action_graph(action_path, save_path ="./Data_graph/" ,env_name = 'Richd
     return save_path + file_name
 if __name__ == '__main__':
 
-    save_log_graph()
+    #save_log_graph(log_path="./PPO_logs/HalfCheetah-v5/20250621-183206/PPO_HalfCheetah-v5_log_20250621-183206.csv")
+    save_log_graph(log_path="./PPO_logs/Humanoid-v5/20250624-131950/PPO_Humanoid-v5_log_20250624-131950.csv", env_name= "Humanoid-v5")
     
     
     

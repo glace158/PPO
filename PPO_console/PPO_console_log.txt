@@ -1,37 +1,37 @@
-training environment name : MountainCarContinuous-v0
+training environment name : Humanoid-v5
 --------------------------------------------------------------------------------------------
-max training timesteps :  1000000
+max training timesteps :  10000000
 max timesteps per episode :  1000
 model saving frequency : 100000 timesteps
 log frequency : 2000 timesteps
 printing average reward over episodes in last : 3600 timesteps
 --------------------------------------------------------------------------------------------
-state space dimension :  Box([-1.2  -0.07], [0.6  0.07], (2,), float32)
-action space dimension :  Box(-1.0, 1.0, (1,), float32)
+state space dimension :  Box(-inf, inf, (348,), float64)
+action space dimension :  Box(-0.4, 0.4, (17,), float32)
 --------------------------------------------------------------------------------------------
 Initializing a continuous action space policy
 --------------------------------------------------------------------------------------------
-starting std of action distribution :  0.1
-decay rate of std of action distribution :  0.16666666666666666
-minimum std of action distribution :  0.1
+starting std of action distribution :  0.2
+decay rate of std of action distribution :  0.010256410256410256
+minimum std of action distribution :  0.2
 decay frequency of std of action distribution : 250000 timesteps
 --------------------------------------------------------------------------------------------
 PPO update frequency : 1440 timesteps
-PPO K epochs :  10
+PPO K epochs :  5
 PPO epsilon clip :  0.2
 discount factor (gamma) :  0.99
 GAE discount factor (lamda) :  0.95
 mini batch size :  32
 --------------------------------------------------------------------------------------------
-optimizer learning rate actor :  0.0003
-optimizer learning rate critic :  0.001
+optimizer learning rate actor :  0.00015
+optimizer learning rate critic :  0.0005
 ============================================================================================
-loading network from : PPO_preTrained/MountainCarContinuous-v0/PPO_MountainCarContinuous-v0_0_20250617-145148.pth
+loading network from : ./PPO_preTrained/Humanoid-v5/PPO_Humanoid-v5_0_20250624-131950.pth
 Network load complete.
 --------------------------------------------------------------------------------------------
-Episode: 1 		 Reward: 93.86
-Episode: 2 		 Reward: 94.41
-Episode: 3 		 Reward: 92.66
+Episode: 1 		 Reward: 479.96
+Episode: 2 		 Reward: 507.07
+Episode: 3 		 Reward: 414.36
 ============================================================================================
-Average test reward : 93.64
+Average test reward : 467.13
 ============================================================================================

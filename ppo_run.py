@@ -3,13 +3,14 @@ import sys
 import time
 from datetime import datetime
 import abc
-import gym
+import gymnasium
 
 import torch
 import numpy as np
 import random
 
 from PPO.PPO2 import PPO
+from PPO.reward import RewardConverter
 #from PPO.environment import GymEnvironment
 from common.fileManager import Config, File
 from common.logger import Logger, DataRecorder
@@ -78,7 +79,8 @@ class Run:
         self.mlp_features_dim = int(self.config.mlp_features_dim.value)
         #####################################################
 
-        self.env = gym.make(self.env_name)
+        self.env = gymnasium.make(self.env_name)
+        #self.env = RewardConverter(self.env)
 
         # state space dimension
         self.observation_space = self.env.observation_space
@@ -434,8 +436,9 @@ class TestRun(Run):
         ################## hyperparameters ##################
         self.init_parameters()
 
-        self.env = gym.make(self.env_name, render_mode="human")
-
+        self.env = gymnasium.make(self.env_name, render_mode="human")
+        #self.env = RewardConverter(self.env)
+        
         # state space dimension
         self.observation_space = self.env.observation_space
         # action space dimension
@@ -489,7 +492,7 @@ class TestRun(Run):
             )
             
             for t in range(1, self.max_ep_len+1):
-                action, action_logprob, state_val = ppo_agent.select_action(state, deterministic=True)
+                action, action_logprob, state_val = ppo_agent.select_action(state)#, deterministic=True)
                 next_state, reward, done, truncated, info = self.env.step(action)
                 done = done or truncated
 
