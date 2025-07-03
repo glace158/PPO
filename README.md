@@ -8,7 +8,7 @@ This repository contains an implementation of Proximal Policy Optimization (PPO)
 | MountainCarContinuous-v0  | MountainCarContinuous-v0 |
 |:-------------------------:|:-------------------------:|
 
-| <img src="images/MountainCarContinuous_result.gif" width="auto" height="500px" alt=""></img> |  ![](https://github.com/glace158/PPO/tree/main/images/PPO_MountainCarContinuous-v0_fig_0.png) |
+| ![](./images/MountainCarContinuous_result.gif) |  ![](https://github.com/glace158/PPO/tree/main/images/PPO_MountainCarContinuous-v0_fig_0.png) |
 
 
 | Ant-v5  | Ant-v5 |
