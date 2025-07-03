@@ -6,8 +6,7 @@ This repository contains an implementation of Proximal Policy Optimization (PPO)
 
 
 | MountainCarContinuous-v0  | MountainCarContinuous-v0 |
-|:-------------------------:|:-------------------------:|
-
+| :-------------------------:|:-------------------------: |
 | ![](https://github.com/glace158/PPO/blob/main/images/MountainCarContinuous_result.gif) |  ![](https://github.com/glace158/PPO/blob/main/images/PPO_MountainCarContinuous-v0_fig_0.png) |
 
 
