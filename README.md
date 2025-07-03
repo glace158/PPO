@@ -22,4 +22,4 @@ This repository contains an implementation of Proximal Policy Optimization (PPO)
 
 | Humanoid-v5  | Humanoid-v5 |
 | :-------------------------:|:-------------------------: |
-| ![](https://github.com/glace158/PPO/blob/main/images/MountainCarContinuous_result.gif) |  ![](https://github.com/glace158/PPO/blob/main/images/PPO_Humanoid-v5_fig_0.png) |
+| ![](https://github.com/glace158/PPO/blob/main/images/Humanoid_result.gif) |  ![](https://github.com/glace158/PPO/blob/main/images/PPO_Humanoid-v5_fig_0.png) |
